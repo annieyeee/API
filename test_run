@@ -1,0 +1,129 @@
+{
+	"id": "745a0d55-fc47-47e0-803b-383e08232cc8",
+	"name": "New Collection",
+	"timestamp": "2022-11-16T12:32:05.139Z",
+	"collection_id": "0-89a1260f-5e74-45fb-b6dd-9e791c8aa467",
+	"folder_id": 0,
+	"environment_id": "3e7902c3-ef6a-461b-bef4-c1dbc070d217",
+	"totalPass": 5,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "edc091c9-0d10-435a-98f8-9409dbc96fe1",
+			"name": "user",
+			"url": "https://jsonplaceholder.typicode.com/users?Request",
+			"time": 47,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify if there are 10 users": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify if there are 10 users": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				47
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify if there are 10 users": false
+				}
+			]
+		},
+		{
+			"id": "3eaff13e-a90b-4b2e-a76d-6cb54fbb1054",
+			"name": "ID",
+			"url": "https://jsonplaceholder.typicode.com/users?GetRequestById",
+			"time": 41,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Verify if user with id8 is Nicholas Runolfsdottir V": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify if user with id8 is Nicholas Runolfsdottir V": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				41
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Verify if user with id8 is Nicholas Runolfsdottir V": true
+				}
+			]
+		},
+		{
+			"id": "73c163cc-50b5-4d08-976b-2d7336d3b307",
+			"name": "New Request",
+			"url": "https://jsonplaceholder.typicode.com/users?Request",
+			"time": 506,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"Data is showing": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Data is showing": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				506
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"Data is showing": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 594,
+	"collection": {
+		"requests": [
+			{
+				"id": "edc091c9-0d10-435a-98f8-9409dbc96fe1",
+				"method": "GET"
+			},
+			{
+				"id": "3eaff13e-a90b-4b2e-a76d-6cb54fbb1054",
+				"method": "GET"
+			},
+			{
+				"id": "73c163cc-50b5-4d08-976b-2d7336d3b307",
+				"method": "POST"
+			}
+		]
+	}
+}
